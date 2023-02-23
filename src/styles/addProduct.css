@@ -1,0 +1,57 @@
+.add-product {
+  width: 35%;
+  height: 85%;
+  background-color: whitesmoke;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: auto;
+}
+
+.add-product_input {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product_SNP {
+  width: 60%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.add-product_SNP_desc {
+  font-size: 0.9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.add-product_SNP label {
+  margin-right: 5px;
+}
+
+@media (max-width: 1100.98px) {
+  .add-product {
+    width: 60%;
+  }
+  .add-product_SNP {
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .add-product_SNP label {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .add-product {
+    width: 90%;
+  }
+  .add-product_SNP {
+    width: 70%;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=addProduct.css.map */

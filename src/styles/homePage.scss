@@ -1,0 +1,66 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    height: 96vh;
+    background-image: url("../assets/rose-petals.svg");
+    overflow: auto;
+}
+
+.home-container_top{
+    width: 95%;
+    margin: auto;
+    margin-top: 0.5em;
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button{
+    margin-right: 2em;
+    height: 2.5em;
+}
+
+button:nth-of-type(1){
+    margin-right: 1em;
+}
+
+
+}
+
+.home-container_products_grid{
+    @include flexCenter();
+    margin: auto;
+    margin-bottom: 2em;
+    width: 100%;    
+}
+
+.home-container_products{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: center;
+    grid-gap: 1.5rem;
+}
+
+@media (max-width: 1100.98px){
+    .home-container_products{
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 575.98px){
+    .home-container_products{
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .home-container_top button{
+        margin-right: 1em;
+
+    }
+}
+

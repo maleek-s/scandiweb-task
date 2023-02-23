@@ -1,0 +1,22 @@
+.home-container_products_single{
+    padding-top: 10px;
+    border: 1px solid #313638;
+    border-radius: 2%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    will-change: transform;
+    transition: transform 450ms;
+}
+
+.home-container_products_single:hover{
+    transition: transform 125ms;
+    transform: translateY(-5px);
+}
+
+.home-container_products_single_container_checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+}

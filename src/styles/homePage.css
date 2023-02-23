@@ -1,0 +1,59 @@
+.home-container {
+  height: 94vh;
+  background-image: url("../assets/rose-petals.svg");
+  overflow: auto;
+}
+
+.home-container_top {
+  width: 95%;
+  margin: auto;
+  margin-top: 0.5em;
+}
+.home-container_top h2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.home-container_top button {
+  margin-right: 2em;
+  height: 2.5em;
+}
+.home-container_top button:nth-of-type(1) {
+  margin-right: 1em;
+}
+
+.home-container_products_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.home-container_products {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: center;
+  grid-gap: 1.5rem;
+}
+
+@media (max-width: 1100.98px) {
+  .home-container_products {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media (max-width: 575.98px) {
+  .home-container_products {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .home-container_top button {
+    margin-right: 1em;
+  }
+
+  .home-container_top button {
+    font-size: 0.9em;
+    min-width: fit-content;
+  }
+
+}/*# sourceMappingURL=homePage.css.map */
